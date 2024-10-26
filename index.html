@@ -18,10 +18,16 @@
             Your browser does not support the video tag.
         </video>
         
-        <audio autoplay loop>
-            <source src="Video.mp3" type="audio/mp3">
+        <audio id="myAudio" autoplay loop>
+            <source src="Video.mp3" type="audio/mpeg">
             Your browser does not support the audio tag.
         </audio>
+    
+    <script>
+        // Optionally, you can add JavaScript to control playback
+        const audio = document.getElementById('myAudio');
+        audio.volume = 0.5; // Set volume (0.0 to 1.0)
+    </script>
 
         <button onclick="startFireworks()">Start Fireworks</button>
 
