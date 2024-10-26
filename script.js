@@ -33,3 +33,10 @@ function startFireworks() {
         startVelocity: 45,
     });
 }
+window.addEventListener('load', function() {
+    const audio = document.getElementById('background-audio');
+    audio.muted = false; // Unmute the audio after load
+    audio.play().catch(error => {
+        console.log("Autoplay prevented:", error);
+    });
+});
